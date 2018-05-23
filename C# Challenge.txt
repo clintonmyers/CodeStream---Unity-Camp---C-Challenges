@@ -1,0 +1,69 @@
+Order of Class
+
+Notes:
+
+For video 2:
+  We need to help them set up all necessary folders.
+  Show them where to put animations
+  Is kinematic is now Body - kinematic
+
+  For Tile Prefabs, note that it can be confusing
+
+
+Week 1
+  Day 1
+    AM - Setup and Intro to Unity
+    PM - 
+  Day 2
+    AM
+    PM
+  Day 3
+    AM
+    PM
+  Day 4
+    AM
+    PM
+Week 2
+  Day 1
+    AM
+    PM
+  Day 2
+    AM
+    PM
+  Day 3
+    AM
+    PM
+  Day 4
+    AM
+    PM
+Week 3
+  Day 1
+    AM
+    PM
+  Day 2
+    AM
+    PM
+  Day 3
+    AM
+    PM
+  Day 4
+    AM
+    PM
+
+Script Assignments
+
+SCRIPT CHALLENGES - For these challenges, you will need to fill out missing lines of C# code in multiple script files. You will be given instructions, hints, and search terms. Search the internet for example code and documentation, or look in the rest of the code for similar examples. Replace the /* COMMENT CODE */ with your own code.
+
+Board Manager
+  CHALLENGE NO. 1 - Fill out the for loops on lines 70 and 73. Google "for loop C#"
+  CHALLENGE NO. 2 - Fill out the if statement on line 79. Google "C# logical operators"
+
+Game Manager
+  CHALLENGE NO. - Fill out line 21. Google "C# variables"
+  CHALLENGE NO. - Fill out line 66. Google "increment by one C#"
+  CHALLENGE NO. - Fill out line 155. Google "C# if" and "C# logical operators"
+
+Moving Object
+  CHALLENGE NO. - Fill out lines 58 and 62. Google "C# return" and "C# boolean"
+
+
