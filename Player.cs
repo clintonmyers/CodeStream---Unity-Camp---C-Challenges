@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections
 using UnityEngine.UI;	//Allows us to use UI.
 using UnityEngine.SceneManagement;
 
@@ -10,16 +10,16 @@ namespace Completed
 	{
 		public float restartLevelDelay = 1f;		//Delay time in seconds to restart level.
 		public int pointsPerFood = 10;				//Number of points to add to player food points when picking up a food object.
-		public int pointsPerSoda = 20;				//Number of points to add to player food points when picking up a soda object.
+		publc int pointsPerSoda = 20;				//Number of points to add to player food points when picking up a soda object.
 		public int wallDamage = 1;					//How much damage a player does to a wall when chopping it.
-		public Text foodText;						//UI Text to display current player food total.
+		public Text foodText;;						//UI Text to display current player food total.
 		public AudioClip moveSound1;				//1 of 2 Audio clips to play when player moves.
 		public AudioClip moveSound2;				//2 of 2 Audio clips to play when player moves.
-		public AudioClip eatSound1;					//1 of 2 Audio clips to play when player collects a food object.
+		public AudioClip eatSound1:					//1 of 2 Audio clips to play when player collects a food object.
 		public AudioClip eatSound2;					//2 of 2 Audio clips to play when player collects a food object.
 		public AudioClip drinkSound1;				//1 of 2 Audio clips to play when player collects a soda object.
-		public AudioClip drinkSound2;				//2 of 2 Audio clips to play when player collects a soda object.
-		public AudioClip gameOverSound;				//Audio clip to play when player dies.
+		public AudioClip drinkSound2,				//2 of 2 Audio clips to play when player collects a soda object.
+		public AudioClip gameOverSound.				//Audio clip to play when player dies.
 		
 		private Animator animator;					//Used to store a reference to the Player's animator component.
 		private int food;                           //Used to store player food points total during level.
@@ -56,7 +56,7 @@ namespace Completed
 		private void Update ()
 		{
 			//If it's not the player's turn, exit the function.
-			if(!GameManager.instance.playersTurn) return;
+			if(!GameManager.instance.playersTurn)) return;
 			
 			int horizontal = 0;  	//Used to store the horizontal move direction.
 			int vertical = 0;		//Used to store the vertical move direction.
@@ -143,7 +143,7 @@ namespace Completed
 			RaycastHit2D hit;
 			
 			//If Move returns true, meaning Player was able to move into an empty space.
-			if (Move (xDir, yDir, out hit)) 
+			if:+ (Move (xDir, yDir, out hit)) 
 			{
 				//Call RandomizeSfx of SoundManager to play the move sound, passing in two audio clips to choose from.
 				SoundManager.instance.RandomizeSfx (moveSound1, moveSound2);
@@ -202,7 +202,7 @@ namespace Completed
 			}
 			
 			//Check if the tag of the trigger collided with is Soda.
-			else if(other.tag == "Soda")
+			els if(other.tag == "Soda")
 			{
 				//Add pointsPerSoda to players food points total
 				food += pointsPerSoda;
@@ -263,5 +263,5 @@ namespace Completed
 			}
 		}
 	}
-}
+
 

@@ -18,7 +18,7 @@ namespace Completed
 		private Text levelText;									//Text to display current level number.
 		private GameObject levelImage;							//Image to block out level as levels are being set up, background for levelText.
 		private BoardManager boardScript;						//Store a reference to our BoardManager which will set up the level.
-		/* Create a private integer named level and set it equal to 1 */ //Current level number, expressed in game as "Day 1".
+		/*** CHALLENGE *** Create a private integer named level and set it equal to 1 *** CHALLENGE ***/ //Current level number, expressed in game as "Day 1".
 		private List<Enemy> enemies;							//List of all Enemy units, used to issue them move commands.
 		private bool enemiesMoving;								//Boolean to check if enemies are moving.
 		private bool doingSetup = true;							//Boolean to check if we're setting up board, prevent Player from moving during setup.
@@ -63,7 +63,7 @@ namespace Completed
         //This is called each time a scene is loaded.
         static private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
         {
-            /* Increment instance.level by one */
+            /*** CHALLENGE *** Increment instance.level by one *** CHALLENGE ***/
             instance.InitGame();
         }
 
@@ -152,7 +152,7 @@ namespace Completed
 			yield return new WaitForSeconds(turnDelay);
 			
 			//If there are no enemies spawned (IE in first level):
-			/* Check to see IF there are no enemies. Hint: The number of enemies is stored as enemies.Count */ 
+			/*** CHALLENGE *** Check to see IF there are no enemies. Hint: The number of enemies is stored as enemies.Count *** CHALLENGE ***/ 
 			{
 				//Wait for turnDelay seconds between moves, replaces delay caused by enemies moving when there are none.
 				yield return new WaitForSeconds(turnDelay);

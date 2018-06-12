@@ -25,9 +25,9 @@ namespace Completed
 			}
 		}
 		
-		
-		public int columns = 8; 										//Number of columns in our game board.
-		public int rows = 8;											//Number of rows in our game board.
+		/*** CHALLENGE *** Initialize two public integer variables, name them 'row' and 'column', and set them equal to the correct value, all in one line each. *** CHALLENGE ***/
+		// YOUR CODE HERE 										//Number of columns in our game board.
+		// YOUR CODE HERE											//Number of rows in our game board.
 		public Count wallCount = new Count (5, 9);						//Lower and upper limit for our random number of walls per level.
 		public Count foodCount = new Count (1, 5);						//Lower and upper limit for our random number of food items per level.
 		public GameObject exit;											//Prefab to spawn for exit.
@@ -67,16 +67,16 @@ namespace Completed
 			boardHolder = new GameObject ("Board").transform;
 			
 			//Loop along x axis, starting from -1 (to fill corner) with floor or outerwall edge tiles.
-			for(/* set the variable x equal to negative one; Keep looping as long as x is less than columns plus one; Increment x by 1 each time */)
+			for(/*** CHALLENGE *** set the variable x equal to negative one; Keep looping as long as x is less than columns plus one; Increment x by 1 each time *** CHALLENGE ***/)
 			{
 				//Loop along y axis, starting from -1 to place floor or outerwall tiles.
-				for(/* set the variable y equal to negative one; Keep looping as long as y is less than columns plus one; Increment y by 1 each time */)
+				for(/*** CHALLENGE *** set the variable y equal to negative one; Keep looping as long as y is less than columns plus one; Increment y by 1 each time *** CHALLENGE ***/)
 				{
 					//Choose a random tile from our array of floor tile prefabs and prepare to instantiate it.
 					GameObject toInstantiate = floorTiles[Random.Range (0,floorTiles.Length)];
 					
 					//Check if the current position is at board edge, if so choose a random outer wall prefab from our array of outer wall tiles.
-					if(/*Check to see if x equals rows, y equals columns, or if x or y equals negative one*/)
+					if(/*** CHALLENGE *** Check to see if x equals rows OR y equals columns OR if x OR y equals negative one *** CHALLENGE ***/)
 						toInstantiate = outerWallTiles [Random.Range (0, outerWallTiles.Length)];
 					
 					//Instantiate the GameObject instance using the prefab chosen for toInstantiate at the Vector3 corresponding to current grid position in loop, cast it to GameObject.
